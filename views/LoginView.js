@@ -24,7 +24,10 @@ export const LoginView = () => {
           <Input placeholder="Password" secureTextEntry={true} />
         </View>
         <View style={{ marginTop: 18 }}>
-          <Button title="Login" />
+          <Button
+            title="Login"
+            onPress={() => setNavPage(APP_PAGES.INSTAGRAM.HOME)}
+          />
         </View>
         <View style={{ marginTop: 10 }}>
           <Text style={{ color: "gray" }}>

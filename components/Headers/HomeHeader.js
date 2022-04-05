@@ -13,14 +13,6 @@ export const HomeHeader = () => {
         />
         <Text>{APP_ICONS.INBOX}</Text>
       </View>
-      <View
-        style={{
-          borderBottomWidth: 1,
-          borderBottomColor: "gray",
-          width: "90%",
-          alignItems: "center"
-        }}
-      />
     </>
   );
 };
@@ -30,10 +22,11 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between",
-    marginBottom: 10
+    marginBottom: 10,
+    width: 350
   },
   logo: {
     width: 200,
-    height: 50
+    height: 80
   }
 });
