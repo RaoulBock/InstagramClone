@@ -90,19 +90,29 @@ export const users = [
   {
     id: "1",
     username: "Raoul Bock",
-    post: ["Post Title", "Post itself", "date and time"],
-    uploadedTime: "12:00 am"
+    story: [
+      "username ",
+      require("Instagram_logo.svg-removebg-preview.png"),
+      "dateUploaded"
+    ],
+    image: "require(Instagram_logo.svg-removebg-preview.png)"
   },
   {
     id: "2",
     username: "Raoul Bock",
-    post: ["Post Title", "Post itself", "date and time"],
-    uploadedTime: "12:00 am"
+    story: [
+      "username ",
+      require("Instagram_logo.svg-removebg-preview.png"),
+      "dateUploaded"
+    ]
   },
   {
     id: "3",
     username: "Raoul Bock",
-    post: ["Post Title", "Post itself", "date and time"],
-    uploadedTime: "12:00 am"
+    story: [
+      "username ",
+      require("Instagram_logo.svg-removebg-preview.png"),
+      "dateUploaded"
+    ]
   }
 ];

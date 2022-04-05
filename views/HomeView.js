@@ -8,7 +8,7 @@ import {
   FlatList
 } from "react-native";
 import { styleProps } from "react-native-web/dist/cjs/modules/forwardedProps";
-import { HomeFeedPost } from "../components/FeedPosts/HomeFeedPost";
+import { HomeStoryPost } from "../components/FeedPosts/HomeStoryPost";
 import { HomeHeader } from "../components/Headers/HomeHeader";
 import { BottomNav } from "../components/nav/BottomNav";
 
@@ -30,7 +30,7 @@ export const HomeView = () => {
                   data={users}
                   keyExtractor={(item, index) => "key" + index}
                   renderItem={({ item }) => {
-                    return <HomeFeedPost item={item} />;
+                    return <HomeStoryPost item={item} />;
                   }}
                 />
               </View>
