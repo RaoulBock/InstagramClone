@@ -5,6 +5,7 @@ import { StyleSheet, Text, View, SafeAreaView } from "react-native";
 import AppProvider, { AppContext } from "./context/AppProvider";
 import { APP_PAGES } from "./context/settings";
 import { LoginView } from "./views/LoginView";
+import { RegisterView } from "./views/RegisterView";
 
 function App() {
   return (
@@ -20,7 +21,10 @@ const NavWrapper = () => {
   return (
     <>
       <View>
-        <View>{navPage === APP_PAGES.INSTAGRAM.LOGIN && <LoginView />}</View>
+        <View>
+          {navPage === APP_PAGES.INSTAGRAM.LOGIN && <LoginView />}
+          {navPage === APP_PAGES.INSTAGRAM.REGISTER && <RegisterView />}
+        </View>
       </View>
     </>
   );

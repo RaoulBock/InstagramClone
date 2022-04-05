@@ -1,12 +1,13 @@
 import React from "react";
 import { StyleSheet, Text, View, SafeAreaView, Image } from "react-native";
-import { Button } from "../components/Buttons/Button";
-import { Input } from "../components/Inputs/Input";
 
 import { AppContext } from "../context/AppProvider";
 import { APP_PAGES } from "../context/settings";
 
-export const LoginView = () => {
+import { Input } from "../components/Inputs/Input";
+import { Button } from "../components/Buttons/Button";
+
+export const RegisterView = () => {
   const { navPage, setNavPage } = React.useContext(AppContext);
   return (
     <>
@@ -18,31 +19,40 @@ export const LoginView = () => {
           />
         </View>
         <View style={{ marginTop: 28 }}>
-          <Input placeholder="Phone number, email or username" />
+          <Input placeholder="Phone number or Email" />
+        </View>
+        <View style={{ marginTop: 28 }}>
+          <Input placeholder="Full Name" />
+        </View>
+        <View style={{ marginTop: 28 }}>
+          <Input placeholder="Username" />
         </View>
         <View style={{ marginTop: 18 }}>
           <Input placeholder="Password" secureTextEntry={true} />
         </View>
         <View style={{ marginTop: 18 }}>
-          <Button title="Login" />
+          <Button title="Sign up" />
         </View>
-        <View style={{ marginTop: 10 }}>
-          <Text style={{ color: "gray" }}>
-            Forgot your login details?{" "}
-            <Text style={{ fontWeight: "bold" }}>Get help signing in.</Text>
+        <View style={{ marginTop: 10, width: 300 }}>
+          <Text style={{ color: "gray", lineHeight: 20 }}>
+            By signing up, you agree to our{" "}
+            <Text style={{ fontWeight: "bold" }}>
+              Terms, Data Policy and Cookies Policy.
+            </Text>
           </Text>
         </View>
+
         <View style={{ marginTop: 10 }}>
           <Text>or</Text>
         </View>
         <View style={{ marginTop: 10 }}>
           <Text style={{ color: "gray" }}>
-            Don't have an account?{" "}
+            Already have an account?{" "}
             <Text
               style={{ fontWeight: "bold" }}
-              onPress={() => setNavPage(APP_PAGES.INSTAGRAM.REGISTER)}
+              onPress={() => setNavPage(APP_PAGES.INSTAGRAM.LOGIN)}
             >
-              Sign up.
+              Login.
             </Text>
           </Text>
         </View>
@@ -53,7 +63,7 @@ export const LoginView = () => {
 
 const styles = StyleSheet.create({
   topSection: {
-    marginTop: "40%",
+    marginTop: "10%",
     alignItems: "center"
   },
   logo: {
