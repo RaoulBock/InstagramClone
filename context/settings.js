@@ -45,5 +45,32 @@ export const APP_ICONS = {
         color: "#000"
       }}
     />
+  ),
+  HOME: (
+    <AntDesign
+      name="home"
+      style={{
+        fontSize: 28,
+        color: "#000"
+      }}
+    />
+  ),
+  SEARCH: (
+    <AntDesign
+      name="search1"
+      style={{
+        fontSize: 28,
+        color: "#000"
+      }}
+    />
+  ),
+  HEART: (
+    <AntDesign
+      name="heart"
+      style={{
+        fontSize: 28,
+        color: "#000"
+      }}
+    />
   )
 };
