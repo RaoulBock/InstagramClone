@@ -8,7 +8,20 @@ import { Input } from "../components/Inputs/Input";
 import { Button } from "../components/Buttons/Button";
 
 export const RegisterView = () => {
-  const { navPage, setNavPage } = React.useContext(AppContext);
+  const {
+    navPage,
+    setNavPage,
+    userName,
+    setUserName,
+    password,
+    setPassword,
+    phoneNumber,
+    setPhoneNumber,
+    fullName,
+    setFullName,
+    email,
+    setEmail
+  } = React.useContext(AppContext);
   return (
     <>
       <SafeAreaView style={styles.topSection}>
@@ -19,16 +32,29 @@ export const RegisterView = () => {
           />
         </View>
         <View style={{ marginTop: 28 }}>
-          <Input placeholder="Phone number or Email" />
+          <Input
+            placeholder="Phone number or Email"
+            onChangeText={(email) => setEmail(email)}
+          />
         </View>
         <View style={{ marginTop: 28 }}>
-          <Input placeholder="Full Name" />
+          <Input
+            placeholder="Full Name"
+            onChangeText={(fullName) => setFullName(fullName)}
+          />
         </View>
         <View style={{ marginTop: 28 }}>
-          <Input placeholder="Username" />
+          <Input
+            placeholder="Username"
+            onChangeText={(userName) => setUserName(userName)}
+          />
         </View>
         <View style={{ marginTop: 18 }}>
-          <Input placeholder="Password" secureTextEntry={true} />
+          <Input
+            placeholder="Password"
+            secureTextEntry={true}
+            onChangeText={(password) => setPassword(password)}
+          />
         </View>
         <View style={{ marginTop: 18 }}>
           <Button title="Sign up" />

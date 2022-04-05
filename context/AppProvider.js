@@ -11,7 +11,9 @@ export const AppContext = React.createContext({
   phoneNumber: "",
   setPhoneNumber: (val) => {},
   fullName: "",
-  setFullName: (val) => {}
+  setFullName: (val) => {},
+  email: "",
+  setEmail: (val) => {}
 });
 
 const AppProvider = ({ children }) => {
@@ -20,6 +22,7 @@ const AppProvider = ({ children }) => {
   const [password, setPassword] = React.useState("");
   const [phoneNumber, setPhoneNumber] = React.useState("");
   const [fullName, setFullName] = React.useState("");
+  const [email, setEmail] = React.useState("");
 
   return (
     <AppContext.Provider
@@ -33,7 +36,9 @@ const AppProvider = ({ children }) => {
         phoneNumber,
         setPhoneNumber,
         fullName,
-        setFullName
+        setFullName,
+        email,
+        setEmail
       }}
     >
       {children}
