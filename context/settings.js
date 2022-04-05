@@ -1,6 +1,7 @@
 export const APP_PAGES = {
   INSTAGRAM: {
     LOGIN: "LOGIN",
-    REGISTER: "REGISTER"
+    REGISTER: "REGISTER",
+    HOME: "HOME"
   }
 };
