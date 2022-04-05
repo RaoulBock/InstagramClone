@@ -20,9 +20,7 @@ const NavWrapper = () => {
   return (
     <>
       <View>
-        <SafeAreaView>
-          <View>{navPage === APP_PAGES.INSTAGRAM.LOGIN && <LoginView />}</View>
-        </SafeAreaView>
+        <View>{navPage === APP_PAGES.INSTAGRAM.LOGIN && <LoginView />}</View>
       </View>
     </>
   );
