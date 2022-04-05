@@ -49,7 +49,7 @@ export const RegisterView = () => {
           <Text style={{ color: "gray" }}>
             Already have an account?{" "}
             <Text
-              style={{ fontWeight: "bold" }}
+              style={{ fontWeight: "bold", color: "#74b9ff" }}
               onPress={() => setNavPage(APP_PAGES.INSTAGRAM.LOGIN)}
             >
               Login.

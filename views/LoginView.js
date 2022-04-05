@@ -29,7 +29,9 @@ export const LoginView = () => {
         <View style={{ marginTop: 10 }}>
           <Text style={{ color: "gray" }}>
             Forgot your login details?{" "}
-            <Text style={{ fontWeight: "bold" }}>Get help signing in.</Text>
+            <Text style={{ fontWeight: "bold", color: "#74b9ff" }}>
+              Get help signing in.
+            </Text>
           </Text>
         </View>
         <View style={{ marginTop: 10 }}>
@@ -39,7 +41,7 @@ export const LoginView = () => {
           <Text style={{ color: "gray" }}>
             Don't have an account?{" "}
             <Text
-              style={{ fontWeight: "bold" }}
+              style={{ fontWeight: "bold", color: "#74b9ff" }}
               onPress={() => setNavPage(APP_PAGES.INSTAGRAM.REGISTER)}
             >
               Sign up.
