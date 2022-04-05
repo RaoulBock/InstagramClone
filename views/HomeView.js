@@ -1,5 +1,6 @@
 import React from "react";
 import { StyleSheet, Text, View, SafeAreaView, Image } from "react-native";
+import { HomeHeader } from "../components/Headers/HomeHeader";
 
 export const HomeView = () => {
   const [isFollowing, setIsFollowing] = React.useState(false);
@@ -13,6 +14,7 @@ export const HomeView = () => {
         ) : (
           <View>
             <Text>HomeView</Text>
+            <HomeHeader />
           </View>
         )}
       </SafeAreaView>
