@@ -1,10 +1,22 @@
 import React from "react";
-import { StyleSheet, Text, View, SafeAreaView, Image } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  SafeAreaView,
+  Image,
+  Dimensions,
+  StatusBar
+} from "react-native";
 import { APP_ICONS, APP_PAGES } from "../../context/settings";
 
 import { AntDesign, Entypo } from "react-native-vector-icons";
 
 import { AppContext } from "../../context/AppProvider";
+
+const screenHeight = Dimensions.get("screen").height;
+const windowHeight = Dimensions.get("window").height;
+const navbarHeight = screenHeight - windowHeight + StatusBar.currentHeight;
 
 export const BottomNav = () => {
   const { navPage, setNavPage } = React.useContext(AppContext);
@@ -80,6 +92,10 @@ const styles = StyleSheet.create({
     alignItems: "baseline",
     justifyContent: "space-between",
     width: "100%",
-    padding: 10
+    padding: 10,
+    top: windowHeight / 1.51,
+    backgroundColor: "#ededed",
+    paddingLeft: 20,
+    paddingRight: 20
   }
 });

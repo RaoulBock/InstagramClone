@@ -5,7 +5,8 @@ import {
   View,
   SafeAreaView,
   Image,
-  FlatList
+  FlatList,
+  Dimensions
 } from "react-native";
 import { styleProps } from "react-native-web/dist/cjs/modules/forwardedProps";
 import { HomeStoryPost } from "../components/FeedPosts/HomeStoryPost";
@@ -13,6 +14,8 @@ import { HomeHeader } from "../components/Headers/HomeHeader";
 import { BottomNav } from "../components/nav/BottomNav";
 
 import { users } from "../context/settings";
+
+const Height = Dimensions.get("window").height;
 
 export const HomeView = () => {
   const [isFollowing, setIsFollowing] = React.useState(users);
@@ -36,6 +39,11 @@ export const HomeView = () => {
                   }}
                 />
               </View>
+            </View>
+            <View
+              style={{ backgroundColor: "red", width: "100%", height: "40%" }}
+            >
+              <Text>awersome</Text>
             </View>
             <View style={{ width: "100%" }}>
               <BottomNav />
@@ -68,7 +76,7 @@ const styles = StyleSheet.create({
   },
   bodyContainer: {
     width: "100%",
-    height: "80%"
+    height: Height / 7
   },
   feedBody: {
     alignItems: "center",

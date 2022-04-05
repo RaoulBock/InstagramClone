@@ -5,8 +5,11 @@ import {
   View,
   SafeAreaView,
   Image,
-  FlatList
+  FlatList,
+  Dimensions
 } from "react-native";
+
+const Height = Dimensions.get("window").height;
 
 export const HomeStoryPost = ({ item, index }) => {
   return (
@@ -31,8 +34,8 @@ const styles = StyleSheet.create({
     backgroundColor: "white"
   },
   storyImage: {
-    width: 73,
-    height: 73,
+    width: 70,
+    height: 70,
     borderRadius: 50,
     borderWidth: 3,
     borderColor: "gray"
