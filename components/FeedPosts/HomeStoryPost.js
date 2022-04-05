@@ -8,12 +8,17 @@ import {
   FlatList
 } from "react-native";
 
-export const HomeStoryPost = ({ item }) => {
+export const HomeStoryPost = ({ item, index }) => {
   return (
     <>
       <View style={styles.StoryOutline}>
         <View style={styles.Story}>
-          <Image source={item.id} style={styles.storyImage} />
+          <Image
+            source={{ uri: item.image }}
+            key={index}
+            style={styles.storyImage}
+          />
+          <Text style={styles.storyImageText}>{item.username}</Text>
         </View>
       </View>
     </>
@@ -22,13 +27,20 @@ export const HomeStoryPost = ({ item }) => {
 
 const styles = StyleSheet.create({
   StoryOutline: {
-    width: 400,
     padding: 10,
-    backgroundColor: "white",
-    marginTop: 10
+    backgroundColor: "white"
   },
   storyImage: {
-    width: 300,
-    height: 300
+    width: 73,
+    height: 73,
+    borderRadius: 50,
+    borderWidth: 3,
+    borderColor: "gray"
+  },
+  storyImageText: {
+    marginTop: 12,
+    color: "#000",
+    letterSpacing: 1,
+    fontSize: 11
   }
 });

@@ -90,29 +90,31 @@ export const users = [
   {
     id: "1",
     username: "Raoul Bock",
-    story: [
-      "username ",
-      require("Instagram_logo.svg-removebg-preview.png"),
-      "dateUploaded"
-    ],
-    image: "require(Instagram_logo.svg-removebg-preview.png)"
+    story: "username ",
+    image: "https://i.ytimg.com/vi/mGMOLkWSK2Y/maxresdefault.jpg"
   },
   {
     id: "2",
     username: "Raoul Bock",
-    story: [
-      "username ",
-      require("Instagram_logo.svg-removebg-preview.png"),
-      "dateUploaded"
-    ]
+    story: "username ",
+    image: "https://i.ytimg.com/vi/mGMOLkWSK2Y/maxresdefault.jpg"
   },
   {
     id: "3",
     username: "Raoul Bock",
-    story: [
-      "username ",
-      require("Instagram_logo.svg-removebg-preview.png"),
-      "dateUploaded"
-    ]
+    story: "username ",
+    image: "https://i.ytimg.com/vi/mGMOLkWSK2Y/maxresdefault.jpg"
+  },
+  {
+    id: "4",
+    username: "Raoul Bock",
+    story: "username ",
+    image: "https://i.ytimg.com/vi/mGMOLkWSK2Y/maxresdefault.jpg"
+  },
+  {
+    id: "5",
+    username: "Raoul Bock",
+    story: "username ",
+    image: "https://i.ytimg.com/vi/mGMOLkWSK2Y/maxresdefault.jpg"
   }
 ];

@@ -28,6 +28,8 @@ export const HomeView = () => {
               <View style={styles.feedBody}>
                 <FlatList
                   data={users}
+                  horizontal
+                  showsHorizontalScrollIndicator={false}
                   keyExtractor={(item, index) => "key" + index}
                   renderItem={({ item }) => {
                     return <HomeStoryPost item={item} />;
@@ -65,13 +67,12 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   bodyContainer: {
-    backgroundColor: "#eee",
     width: "100%",
     height: "80%"
   },
   feedBody: {
     alignItems: "center",
-    justifyContent: "center",
-    flex: 1
+    justifyContent: "center"
+    // flex: 1
   }
 });
