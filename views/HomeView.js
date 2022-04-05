@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     alignItems: "center"
   },
   bodyContainer: {
-    backgroundColor: "red",
+    backgroundColor: "#eee",
     width: "100%",
     height: "80%"
   }

@@ -65,8 +65,17 @@ export const APP_ICONS = {
     />
   ),
   HEART: (
-    <AntDesign
-      name="heart"
+    <Entypo
+      name="heart-outlined"
+      style={{
+        fontSize: 28,
+        color: "#000"
+      }}
+    />
+  ),
+  DEFAULTPROFILEPICTURE: (
+    <Entypo
+      name="emoji-happy"
       style={{
         fontSize: 28,
         color: "#000"
