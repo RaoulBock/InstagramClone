@@ -19,11 +19,9 @@ const NavWrapper = () => {
 
   return (
     <>
-      <View className="container">
+      <View>
         <SafeAreaView>
-          <View className="CenterContent">
-            {navPage === APP_PAGES.INSTAGRAM.LOGIN && <LoginView />}
-          </View>
+          <View>{navPage === APP_PAGES.INSTAGRAM.LOGIN && <LoginView />}</View>
         </SafeAreaView>
       </View>
     </>
@@ -31,12 +29,7 @@ const NavWrapper = () => {
 };
 
 // const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: "#fff",
-//     alignItems: "center",
-//     justifyContent: "center"
-//   }
+
 // });
 
 export default App;
