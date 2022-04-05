@@ -1,31 +1,58 @@
 import React from "react";
-import { StyleSheet, Text, View, SafeAreaView, Image } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  SafeAreaView,
+  Image,
+  FlatList
+} from "react-native";
 import { styleProps } from "react-native-web/dist/cjs/modules/forwardedProps";
+import { HomeFeedPost } from "../components/FeedPosts/HomeFeedPost";
 import { HomeHeader } from "../components/Headers/HomeHeader";
 import { BottomNav } from "../components/nav/BottomNav";
 
+import { users } from "../context/settings";
+
 export const HomeView = () => {
-  const [isFollowing, setIsFollowing] = React.useState(false);
+  const [isFollowing, setIsFollowing] = React.useState(users);
   return (
     <>
       <SafeAreaView style={styles.topSection}>
-        {!isFollowing ? (
+        {isFollowing.length > 0 ? (
           <>
             <View>
               <HomeHeader />
             </View>
             <View style={styles.bodyContainer}>
-              <Text>Let's get you started</Text>
+              <View style={styles.feedBody}>
+                <FlatList
+                  data={users}
+                  keyExtractor={(item, index) => "key" + index}
+                  renderItem={({ item }) => {
+                    return <HomeFeedPost item={item} />;
+                  }}
+                />
+              </View>
             </View>
             <View style={{ width: "100%" }}>
               <BottomNav />
             </View>
           </>
         ) : (
-          <View>
-            <HomeHeader />
-            <Text>HomeView</Text>
-          </View>
+          <>
+            <View>
+              <HomeHeader />
+            </View>
+            <View style={styles.bodyContainer}>
+              <View style={styles.feedBody}>
+                <Text>Feed is Empty</Text>
+              </View>
+            </View>
+            <View style={{ width: "100%" }}>
+              <BottomNav />
+            </View>
+          </>
         )}
       </SafeAreaView>
     </>
@@ -41,5 +68,10 @@ const styles = StyleSheet.create({
     backgroundColor: "#eee",
     width: "100%",
     height: "80%"
+  },
+  feedBody: {
+    alignItems: "center",
+    justifyContent: "center",
+    flex: 1
   }
 });

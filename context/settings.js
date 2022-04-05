@@ -85,3 +85,24 @@ export const APP_ICONS = {
     />
   )
 };
+
+export const users = [
+  {
+    id: "1",
+    username: "Raoul Bock",
+    post: ["Post Title", "Post itself", "date and time"],
+    uploadedTime: "12:00 am"
+  },
+  {
+    id: "2",
+    username: "Raoul Bock",
+    post: ["Post Title", "Post itself", "date and time"],
+    uploadedTime: "12:00 am"
+  },
+  {
+    id: "3",
+    username: "Raoul Bock",
+    post: ["Post Title", "Post itself", "date and time"],
+    uploadedTime: "12:00 am"
+  }
+];
