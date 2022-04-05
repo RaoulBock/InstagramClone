@@ -5,7 +5,9 @@ export const APP_PAGES = {
     LOGIN: "LOGIN",
     REGISTER: "REGISTER",
     HOME: "HOME",
-    PROFILE: "PROFILE"
+    PROFILE: "PROFILE",
+    SEARCH: "SEARCH",
+    LIKEDSECTION: "LIKEDSECTION"
   }
 };
 
@@ -15,7 +17,7 @@ export const APP_ICONS = {
       name="camerao"
       style={{
         fontSize: 28,
-        color: "#000"
+        color: "#0984e3"
       }}
     />
   ),
@@ -24,7 +26,7 @@ export const APP_ICONS = {
       name="inbox"
       style={{
         fontSize: 28,
-        color: "#000"
+        color: "#0984e3"
       }}
     />
   ),
@@ -33,7 +35,7 @@ export const APP_ICONS = {
       name="left"
       style={{
         fontSize: 28,
-        color: "#000"
+        color: "#0984e3"
       }}
     />
   ),
