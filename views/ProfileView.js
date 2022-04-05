@@ -1,20 +1,19 @@
 import React from "react";
 import { StyleSheet, Text, View, SafeAreaView, Image } from "react-native";
-import { HomeHeader } from "../components/Headers/HomeHeader";
+import { ProfileHeader } from "../components/Headers/ProfileHeader";
 
-export const HomeView = () => {
-  const [isFollowing, setIsFollowing] = React.useState(false);
+export const ProfileView = () => {
   return (
     <>
       <SafeAreaView style={styles.topSection}>
         {isFollowing ? (
           <View>
-            <HomeHeader />
+            <ProfileHeader />
             <Text>Starting following your friends or your favroute artist</Text>
           </View>
         ) : (
           <View>
-            <HomeHeader />
+            <ProfileHeader />
             <Text>HomeView</Text>
           </View>
         )}

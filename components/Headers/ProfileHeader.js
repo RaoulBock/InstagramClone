@@ -2,16 +2,16 @@ import React from "react";
 import { StyleSheet, Text, View, SafeAreaView, Image } from "react-native";
 import { APP_ICONS } from "../../context/settings";
 
-export const HomeHeader = () => {
+export const ProfileHeader = () => {
   return (
     <>
       <View style={styles.homeHeader}>
-        <Text>{APP_ICONS.CAMERA}</Text>
+        <Text>{APP_ICONS.LEFTARROW}</Text>
         <Image
           source={require("../../assets/Instagram_logo.svg-removebg-preview.png")}
           style={styles.logo}
         />
-        <Text>{APP_ICONS.INBOX}</Text>
+        <Text>{APP_ICONS.VERTICALDOTS}</Text>
       </View>
       <View
         style={{
