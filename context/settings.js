@@ -110,6 +110,15 @@ export const APP_ICONS = {
         color: "#000"
       }}
     />
+  ),
+  PLUS: (
+    <AntDesign
+      name="plus"
+      style={{
+        fontSize: 28,
+        color: "#0984e3"
+      }}
+    />
   )
 };
 

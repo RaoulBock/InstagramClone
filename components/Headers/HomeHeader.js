@@ -11,6 +11,7 @@ export const HomeHeader = () => {
           source={require("../../assets/Instagram_logo.svg-removebg-preview.png")}
           style={styles.logo}
         />
+        <Text>{APP_ICONS.PLUS}</Text>
         <Text>{APP_ICONS.INBOX}</Text>
       </View>
     </>
@@ -26,7 +27,7 @@ const styles = StyleSheet.create({
     width: 350
   },
   logo: {
-    width: 200,
+    width: 210,
     height: 80
   }
 });
