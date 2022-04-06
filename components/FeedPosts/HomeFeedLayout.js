@@ -9,6 +9,8 @@ import {
   Dimensions
 } from "react-native";
 import { PickerItem } from "react-native/Libraries/Components/Picker/Picker";
+import { users } from "../../context/settings";
+import { HomeStoryPost } from "./HomeStoryPost";
 
 const Height = Dimensions.get("window").height;
 
@@ -16,6 +18,19 @@ export const HomeFeedLayout = ({ item, index }) => {
   return (
     <>
       <View style={styles.HomeFeedLayout}>
+        <View style={styles.bodyContainer}>
+          <View style={styles.feedBody}>
+            <FlatList
+              data={users}
+              horizontal
+              showsHorizontalScrollIndicator={false}
+              keyExtractor={(item, index) => "key" + index}
+              renderItem={({ item }) => {
+                return <HomeStoryPost item={item} />;
+              }}
+            />
+          </View>
+        </View>
         <View style={styles.HomeFeedLayoutHeader}>
           <View style={styles.HomeFeedLayoutHeaderUserArea}>
             <Image
@@ -44,10 +59,9 @@ export const HomeFeedLayout = ({ item, index }) => {
 const styles = StyleSheet.create({
   HomeFeedLayout: {
     backgroundColor: "white",
-    padding: 12,
-    margin: 8,
-    width: 340,
-    borderRadius: 8
+    width: "100%",
+    borderRadius: 8,
+    marginBottom: 12
   },
   ProfileImage: {
     width: 40,

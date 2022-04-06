@@ -30,7 +30,7 @@ export const HomeStoryPost = ({ item, index }) => {
 
 const styles = StyleSheet.create({
   StoryOutline: {
-    padding: 10,
+    padding: 6,
     backgroundColor: "white"
   },
   storyImage: {
