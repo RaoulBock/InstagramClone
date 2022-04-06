@@ -41,7 +41,11 @@ export const HomeView = () => {
               </View>
             </View>
             <View
-              style={{ backgroundColor: "red", width: "100%", height: "40%" }}
+              style={{
+                backgroundColor: "#eee",
+                width: "100%",
+                height: Height / 1.5
+              }}
             >
               <Text>awersome</Text>
             </View>

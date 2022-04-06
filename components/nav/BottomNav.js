@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     width: "100%",
     padding: 10,
-    top: windowHeight / 1.51,
+    // top: windowHeight / 1.51,
     backgroundColor: "#ededed",
     paddingLeft: 20,
     paddingRight: 20
