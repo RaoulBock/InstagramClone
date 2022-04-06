@@ -91,30 +91,35 @@ export const users = [
     id: "1",
     username: "Raoul Bock",
     story: "username ",
-    image: "https://i.ytimg.com/vi/mGMOLkWSK2Y/maxresdefault.jpg"
+    image: "https://i.ytimg.com/vi/mGMOLkWSK2Y/maxresdefault.jpg",
+    uploadedTime: "12:00 am"
   },
   {
     id: "2",
     username: "Raoul Bock",
     story: "username ",
-    image: "https://i.ytimg.com/vi/mGMOLkWSK2Y/maxresdefault.jpg"
+    image: "https://i.ytimg.com/vi/mGMOLkWSK2Y/maxresdefault.jpg",
+    uploadedTime: "12:00 am"
   },
   {
     id: "3",
     username: "Raoul Bock",
     story: "username ",
-    image: "https://i.ytimg.com/vi/mGMOLkWSK2Y/maxresdefault.jpg"
+    image: "https://i.ytimg.com/vi/mGMOLkWSK2Y/maxresdefault.jpg",
+    uploadedTime: "12:00 am"
   },
   {
     id: "4",
     username: "Raoul Bock",
     story: "username ",
-    image: "https://i.ytimg.com/vi/mGMOLkWSK2Y/maxresdefault.jpg"
+    image: "https://i.ytimg.com/vi/mGMOLkWSK2Y/maxresdefault.jpg",
+    uploadedTime: "12:00 am"
   },
   {
     id: "5",
     username: "Raoul Bock",
     story: "username ",
-    image: "https://i.ytimg.com/vi/mGMOLkWSK2Y/maxresdefault.jpg"
+    image: "https://i.ytimg.com/vi/mGMOLkWSK2Y/maxresdefault.jpg",
+    uploadedTime: "12:00 am"
   }
 ];
