@@ -23,9 +23,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "space-between",
     marginBottom: 10,
-    width: 350,
-    borderBottomWidth: 1,
-    borderColor: "gray"
+    width: 350
   },
   logo: {
     width: 200,

@@ -83,6 +83,33 @@ export const APP_ICONS = {
         color: "#000"
       }}
     />
+  ),
+  MESSAGE: (
+    <AntDesign
+      name="message1"
+      style={{
+        fontSize: 28,
+        color: "#000"
+      }}
+    />
+  ),
+  SHARE: (
+    <AntDesign
+      name="sharealt"
+      style={{
+        fontSize: 28,
+        color: "#000"
+      }}
+    />
+  ),
+  BOOKMARK: (
+    <AntDesign
+      name="book"
+      style={{
+        fontSize: 28,
+        color: "#000"
+      }}
+    />
   )
 };
 

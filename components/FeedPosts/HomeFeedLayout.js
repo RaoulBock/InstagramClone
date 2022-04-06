@@ -6,11 +6,11 @@ import {
   SafeAreaView,
   Image,
   FlatList,
-  Dimensions
+  Dimensions,
+  TouchableOpacity
 } from "react-native";
 import { PickerItem } from "react-native/Libraries/Components/Picker/Picker";
-import { users } from "../../context/settings";
-import { HomeStoryPost } from "./HomeStoryPost";
+import { APP_ICONS } from "../../context/settings";
 
 const Height = Dimensions.get("window").height;
 
@@ -18,19 +18,6 @@ export const HomeFeedLayout = ({ item, index }) => {
   return (
     <>
       <View style={styles.HomeFeedLayout}>
-        <View style={styles.bodyContainer}>
-          <View style={styles.feedBody}>
-            <FlatList
-              data={users}
-              horizontal
-              showsHorizontalScrollIndicator={false}
-              keyExtractor={(item, index) => "key" + index}
-              renderItem={({ item }) => {
-                return <HomeStoryPost item={item} />;
-              }}
-            />
-          </View>
-        </View>
         <View style={styles.HomeFeedLayoutHeader}>
           <View style={styles.HomeFeedLayoutHeaderUserArea}>
             <Image
@@ -51,6 +38,15 @@ export const HomeFeedLayout = ({ item, index }) => {
             style={styles.HomeFeedLayoutContentImage}
           />
         </View>
+        <View style={styles.HomeFeedLayoutBottomBar}>
+          <View style={styles.HomeFeedLayoutBottomBarLeft}>
+            <TouchableOpacity>{APP_ICONS.HEART}</TouchableOpacity>
+            <TouchableOpacity>{APP_ICONS.MESSAGE}</TouchableOpacity>
+            <TouchableOpacity>{APP_ICONS.SHARE}</TouchableOpacity>
+          </View>
+
+          <TouchableOpacity>{APP_ICONS.BOOKMARK}</TouchableOpacity>
+        </View>
       </View>
     </>
   );
@@ -58,10 +54,10 @@ export const HomeFeedLayout = ({ item, index }) => {
 
 const styles = StyleSheet.create({
   HomeFeedLayout: {
-    backgroundColor: "white",
-    width: "100%",
+    padding: 1,
     borderRadius: 8,
-    marginBottom: 12
+    marginBottom: 12,
+    marginTop: 10
   },
   ProfileImage: {
     width: 40,
@@ -70,7 +66,8 @@ const styles = StyleSheet.create({
   },
   HomeFeedLayoutHeaderUserArea: {
     flexDirection: "row",
-    alignItems: "center"
+    alignItems: "center",
+    padding: 4
   },
   HomeFeedLayoutHeaderText: {
     marginLeft: 10,
@@ -85,7 +82,23 @@ const styles = StyleSheet.create({
   },
   HomeFeedLayoutContentImage: {
     width: "100%",
-    height: Height / 1.7,
+    height: Height / 2,
     marginTop: 12
+  },
+  HomeFeedLayoutBottomBar: {
+    marginLeft: 10,
+    marginTop: 10
+  },
+  HomeFeedLayoutBottomBar: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    marginTop: 10
+  },
+  HomeFeedLayoutBottomBarLeft: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    width: 150
   }
 });
