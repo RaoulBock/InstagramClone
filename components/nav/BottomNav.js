@@ -6,7 +6,8 @@ import {
   SafeAreaView,
   Image,
   Dimensions,
-  StatusBar
+  StatusBar,
+  TouchableOpacity
 } from "react-native";
 import { APP_ICONS, APP_PAGES } from "../../context/settings";
 
@@ -23,7 +24,7 @@ export const BottomNav = () => {
   return (
     <>
       <View style={styles.bottomNav}>
-        <Text>
+        <TouchableOpacity onPress={() => setNavPage(APP_PAGES.INSTAGRAM.HOME)}>
           {navPage === APP_PAGES.INSTAGRAM.HOME ? (
             <AntDesign
               name="home"
@@ -41,8 +42,10 @@ export const BottomNav = () => {
               }}
             />
           )}
-        </Text>
-        <Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          onPress={() => setNavPage(APP_PAGES.INSTAGRAM.SEARCH)}
+        >
           {navPage === APP_PAGES.INSTAGRAM.SEARCH ? (
             <AntDesign
               name="search1"
@@ -60,7 +63,7 @@ export const BottomNav = () => {
               }}
             />
           )}
-        </Text>
+        </TouchableOpacity>
         <Text>
           {navPage === APP_PAGES.INSTAGRAM.SEARCH ? (
             <AntDesign

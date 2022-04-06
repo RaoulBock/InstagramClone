@@ -8,6 +8,7 @@ import { LoginView } from "./views/LoginView";
 import { RegisterView } from "./views/RegisterView";
 import { ProfileView } from "./views/ProfileView";
 import { HomeView } from "./views/HomeView";
+import { SearchView } from "./views/SearchView";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ const NavWrapper = () => {
           {navPage === APP_PAGES.INSTAGRAM.REGISTER && <RegisterView />}
           {navPage === APP_PAGES.INSTAGRAM.HOME && <HomeView />}
           {navPage === APP_PAGES.INSTAGRAM.PROFILE && <ProfileView />}
+          {navPage === APP_PAGES.INSTAGRAM.SEARCH && <SearchView />}
         </View>
       </View>
     </>
