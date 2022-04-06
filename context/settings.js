@@ -88,7 +88,7 @@ export const APP_ICONS = {
     <AntDesign
       name="message1"
       style={{
-        fontSize: 28,
+        fontSize: 23,
         color: "#000"
       }}
     />
@@ -97,7 +97,7 @@ export const APP_ICONS = {
     <AntDesign
       name="sharealt"
       style={{
-        fontSize: 28,
+        fontSize: 23,
         color: "#000"
       }}
     />
@@ -106,7 +106,7 @@ export const APP_ICONS = {
     <AntDesign
       name="book"
       style={{
-        fontSize: 28,
+        fontSize: 25,
         color: "#000"
       }}
     />

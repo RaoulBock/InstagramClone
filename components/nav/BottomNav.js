@@ -62,6 +62,25 @@ export const BottomNav = () => {
           )}
         </Text>
         <Text>
+          {navPage === APP_PAGES.INSTAGRAM.SEARCH ? (
+            <AntDesign
+              name="plus"
+              style={{
+                fontSize: 28,
+                color: "#0984e3"
+              }}
+            />
+          ) : (
+            <AntDesign
+              name="plus"
+              style={{
+                fontSize: 28,
+                color: "#000"
+              }}
+            />
+          )}
+        </Text>
+        <Text>
           {navPage === APP_PAGES.INSTAGRAM.LIKEDSECTION ? (
             <Entypo
               name="heart-outlined"

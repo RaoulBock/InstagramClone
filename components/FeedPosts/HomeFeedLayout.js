@@ -92,7 +92,7 @@ const styles = StyleSheet.create({
   },
   HomeFeedLayoutBottomBar: {
     marginLeft: 10,
-    marginTop: 10
+    marginTop: 2
   },
   HomeFeedLayoutBottomBar: {
     flexDirection: "row",
