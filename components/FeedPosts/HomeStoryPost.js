@@ -41,9 +41,12 @@ const styles = StyleSheet.create({
     borderColor: "gray"
   },
   storyImageText: {
-    marginTop: 12,
+    marginTop: 7,
     color: "#000",
     letterSpacing: 1,
     fontSize: 11
+  },
+  Story: {
+    alignItems: "center"
   }
 });

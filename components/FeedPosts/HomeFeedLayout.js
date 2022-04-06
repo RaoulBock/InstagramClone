@@ -25,11 +25,16 @@ export const HomeFeedLayout = ({ item, index }) => {
               key={index}
               style={styles.ProfileImage}
             />
-            <Text style={styles.HomeFeedLayoutHeaderText}>{item.username}</Text>
+            <View>
+              <Text style={styles.HomeFeedLayoutHeaderText}>
+                {item.username}
+              </Text>
+              <Text style={styles.HomeFeedLayoutHeaderText}>
+                {item.uploadedTime}
+              </Text>
+            </View>
           </View>
-          <Text style={styles.HomeFeedLayoutHeaderText}>
-            {item.uploadedTime}
-          </Text>
+          <Text>{APP_ICONS.VERTICALDOTS}</Text>
         </View>
         <View style={styles.HomeFeedLayoutBody}>
           <Image
@@ -72,7 +77,7 @@ const styles = StyleSheet.create({
   HomeFeedLayoutHeaderText: {
     marginLeft: 10,
     fontWeight: "600",
-    fontSize: 15,
+    fontSize: 14,
     color: "gray"
   },
   HomeFeedLayoutHeader: {
