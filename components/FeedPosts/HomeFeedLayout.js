@@ -29,6 +29,13 @@ export const HomeFeedLayout = ({ item, index }) => {
             {item.uploadedTime}
           </Text>
         </View>
+        <View style={styles.HomeFeedLayoutBody}>
+          <Image
+            source={{ uri: item.image }}
+            key={index}
+            style={styles.HomeFeedLayoutContentImage}
+          />
+        </View>
       </View>
     </>
   );
@@ -39,7 +46,7 @@ const styles = StyleSheet.create({
     backgroundColor: "white",
     padding: 12,
     margin: 8,
-    width: 300,
+    width: 340,
     borderRadius: 8
   },
   ProfileImage: {
@@ -61,5 +68,10 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     justifyContent: "space-between"
+  },
+  HomeFeedLayoutContentImage: {
+    width: "100%",
+    height: Height / 1.7,
+    marginTop: 12
   }
 });
