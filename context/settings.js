@@ -16,7 +16,7 @@ export const APP_ICONS = {
     <AntDesign
       name="camerao"
       style={{
-        fontSize: 28,
+        fontSize: 20,
         color: "#fff"
       }}
     />
@@ -25,7 +25,7 @@ export const APP_ICONS = {
     <AntDesign
       name="inbox"
       style={{
-        fontSize: 28,
+        fontSize: 20,
         color: "#fff"
       }}
     />
@@ -88,7 +88,7 @@ export const APP_ICONS = {
     <AntDesign
       name="message1"
       style={{
-        fontSize: 28,
+        fontSize: 20,
         color: "#fff"
       }}
     />
@@ -115,7 +115,7 @@ export const APP_ICONS = {
     <AntDesign
       name="plus"
       style={{
-        fontSize: 28,
+        fontSize: 20,
         color: "#fff"
       }}
     />

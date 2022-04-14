@@ -20,7 +20,7 @@ export const Story = () => {
           <TouchableOpacity style={{ alignItems: "center" }}>
             <Image
               source={{ uri: story.image }}
-              style={{ width: 70, height: 70, borderRadius: 50, margin: 10 }}
+              style={{ width: 60, height: 60, borderRadius: 50, margin: 10 }}
             />
             <Text style={{ color: "white" }}>{story.name}</Text>
           </TouchableOpacity>
