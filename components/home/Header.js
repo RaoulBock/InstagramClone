@@ -21,7 +21,7 @@ export const Header = () => {
           paddingTop: 10
         }}
       >
-        <Text style={styles.text}>Instagram</Text>
+        <Text style={styles.text}>Facegram</Text>
         <View style={{ flexDirection: "row" }}>
           <TouchableOpacity style={{ marginLeft: 20 }}>
             {APP_ICONS.PLUS}
